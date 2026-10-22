@@ -1,7 +1,7 @@
 from __future__ import unicode_literals
 import yt_dlp
 
-print("Insert the link")
+print("Insereix Link")
 link = input("")
 if not link:
     print("No has posat cap enllaç")

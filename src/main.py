@@ -3,12 +3,18 @@ import yt_dlp
 import time
 import sys
 
-print("Insereix Link")
-link = input("")
-if not link:
-    print("No has posat cap enllaç, torna a obrir el script")
-    time.sleep(3)
-    sys.exit(0)
+def insertar_link():
+    print("Insereix Link")
+    link = input("")
+    if not link:
+        print("No has posat cap enllaç, si us plau torna a posar el link")
+        print("")
+        time.sleep(2)
+        return insertar_link()
+    return link
+
+link = insertar_link()
+
 
 print("Quin format vols descarregar?")
 print("")

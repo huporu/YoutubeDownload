@@ -4,14 +4,13 @@ import time
 import sys
 
 def insertar_link():
-    print("Insereix Link")
-    link = input("")
-    if not link:
+    while True:
+        link = input("Insereix Link: ").strip()
+        if link:
+            return link
         print("No has posat cap enllaç, si us plau torna a posar el link")
         print("")
-        time.sleep(2)
-        return insertar_link()
-    return link
+        time.sleep(1)
 
 link = insertar_link()
 

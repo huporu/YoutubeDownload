@@ -1,10 +1,14 @@
 from __future__ import unicode_literals
 import yt_dlp
+import time
+import sys
 
 print("Insereix Link")
 link = input("")
 if not link:
-    print("No has posat cap enllaç")
+    print("No has posat cap enllaç, torna a obrir el script")
+    time.sleep(3)
+    sys.exit(0)
 
 print("Quin format vols descarregar?")
 print("")

@@ -1,7 +1,6 @@
 from __future__ import unicode_literals
 import yt_dlp
 import time
-import sys
 
 def insertar_link():
     while True:
